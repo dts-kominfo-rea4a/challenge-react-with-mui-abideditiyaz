@@ -1,13 +1,64 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font: 300 16px/1.5 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #e3e9ff;
 }
+
+#root {
+  width: 100%;
+}
+
+.App {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-areas: 
+  "title title"
+  "formIsi kontakIsi";
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  grid-area: title;
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem 0 2rem;
+}
+
+img{
+  width: 4rem;
+  height: 4rem;
+}
+
+#dataJSON {
+  display: flex;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #a9a8a8;
+  align-items: center;
+}
+
+.contentData{
+  margin-left: 2rem;
+}
+
+.fomrIsi {
+  grid-area: formIsi;
+}
+
+.kontakIsi {
+  grid-area: kontakIsi;
+  width: 85%;
+  background-color: #d0f2d0;
+}
+
+/* TOLONG PROJECT AKHIR DIBERI KEBEBASAN UNTUK STYLINGNYA  */
